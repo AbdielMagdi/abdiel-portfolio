@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { motion } from 'framer-motion';
-import { X, SkipForward, Pause, Play, Palette, ExternalLink, FileText } from 'lucide-react';
+import { X, SkipForward, Pause, Play, Palette, ExternalLink, FileText, Github } from 'lucide-react';
 import { usePortfolio } from '../context/PortfolioContext';
 import type { PortfolioZone } from '../context/PortfolioContext';
 import { audio } from '../utils/audio';
@@ -214,13 +214,12 @@ export const RecruiterMode: React.FC = () => {
             {tourRoute.map((stop, idx) => (
               <div
                 key={stop.zone}
-                className={`h-1 flex-1 rounded-full transition-all duration-300 ${
-                  idx < currentStopIndex
+                className={`h-1 flex-1 rounded-full transition-all duration-300 ${idx < currentStopIndex
                     ? 'bg-cyan-400'
                     : idx === currentStopIndex
-                    ? 'bg-gradient-to-r from-amber-400 to-cyan-400'
-                    : 'bg-white/10'
-                }`}
+                      ? 'bg-gradient-to-r from-amber-400 to-cyan-400'
+                      : 'bg-white/10'
+                  }`}
               />
             ))}
           </div>
