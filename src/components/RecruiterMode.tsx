@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { motion } from 'framer-motion';
-import { X, SkipForward, Pause, Play, Palette, ExternalLink, FileText, Github } from 'lucide-react';
+import { X, SkipForward, Pause, Play, Palette, ExternalLink, FileText} from 'lucide-react';
 import { usePortfolio } from '../context/PortfolioContext';
 import type { PortfolioZone } from '../context/PortfolioContext';
 import { audio } from '../utils/audio';
@@ -237,7 +237,7 @@ export const RecruiterMode: React.FC = () => {
                 }}
                 className="flex items-center gap-1 px-2 py-0.5 rounded bg-white/5 border border-white/10 hover:border-cyan-400 hover:text-cyan-300 text-white/80 text-[8px] font-orbitron font-bold transition-all cursor-pointer"
               >
-                <Github size={10} />
+                <ExternalLink size={10} />
                 <span>GITHUB</span>
               </button>
               <button
